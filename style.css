@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width:80%;
+    display:block;
+    text-align: center;
+    margin:0 auto;
+}
+
+.title{
+    font-size: 36px;
+}
+
+.r-p-s{
+  
+margin-top:50px !important;
+   
+
+}
+
+li{
+    display:inline-block;
+    margin-right:100px;
+    cursor:pointer;
+}
+
+li:last-child{
+    margin-right: 0px;
+}
+li i{
+    color:#ffcd94;
+    text-shadow: 0px 0px 3px #444;
+    font-size: 60px;
+}
+
