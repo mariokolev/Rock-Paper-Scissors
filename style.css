@@ -74,8 +74,15 @@ body {
           box-shadow: 0px 0px 26px #ff0000;
           text-shadow: 0px 0px 2px #ff0000; }
       .container .wrapper #score li span {
+        display: inline-block;
         margin: 0 10px;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
         font-size: 24px;
+        padding: 10% 0px;
+        width: 40px;
+        height: 60px;
         color: #fff;
         cursor: default; }
     .container .wrapper #r-p-s {
