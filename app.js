@@ -7,18 +7,22 @@ const message = document.querySelector('.message');
 const human_score = document.querySelector('#score li:first-child span');
 const computer_score = document.querySelector('#score li:last-child span');
 
-
+    //Generate computer's choice
 function compChoice(){
     return computer_choice = Math.round(Math.random() *(2 -  0)  + 0);
 }
 
-function UIDisplay(){
+function UIDisplay(human, computer){
+    
 
 }
 
-//variables for scores
+    //variables for scores
 let hs = 0;
 let cs = 0;
+
+    //Display result and score
+
 function result(human, computer){
     
     switch(human){
