@@ -77,8 +77,10 @@ function result(human, computer){
 }
 
 reset.addEventListener('click', function(e){
-    human_score.innerHTML = 0;
-    computer_score.innerHTML = 0;
+    hs= 0;
+    cs = 0;
+    human_score.innerHTML = hs;
+    computer_score.innerHTML = cs;
     message.innerHTML = 'Make your move!';
 });
 
