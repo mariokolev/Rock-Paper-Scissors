@@ -34,15 +34,15 @@ body {
       margin: 0 auto;
       background: #fff;
       text-align: center;
-      height: 50px;
+      height: 80px;
       color: #042C2E;
       cursor: default;
-      padding: 5px 0;
+      padding: 20px 0;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px; }
     .container .wrapper #score {
       display: flex;
-      margin: 40px auto 0 auto;
+      margin: 0px auto 0 auto;
       list-style-type: none;
       width: 100%;
       background: transparent;
@@ -52,7 +52,7 @@ body {
       border-top: 1px solid rgba(0, 0, 0, 0.2);
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       background: rgba(0, 0, 0, 0.1);
-      padding: 20px 40px; }
+      padding: 40px 40px; }
       .container .wrapper #score li i {
         border-radius: 50%;
         text-align: center;
