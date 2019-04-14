@@ -6,6 +6,7 @@ const choices = ['rock', 'paper', 'scissors'];
 const message = document.querySelector('.message');
 const human_score = document.querySelector('#score li:first-child span');
 const computer_score = document.querySelector('#score li:last-child span');
+const reset = document.querySelector('.btn-reset');
 
     //Generate computer's choice
 function compChoice(){
@@ -75,6 +76,11 @@ function result(human, computer){
     }
 }
 
+reset.addEventListener('click', function(e){
+    human_score.innerHTML = 0;
+    computer_score.innerHTML = 0;
+    message.innerHTML = 'Make your move!';
+});
 
 list.addEventListener('click', function(e){
 
