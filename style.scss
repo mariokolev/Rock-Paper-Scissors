@@ -1,5 +1,7 @@
 $human: #00BD56;
 $robot:#ff0000;
+$winner : rgba(212,255,255,0.3);
+
 
 
 *{
@@ -14,6 +16,40 @@ body{
     height:100vh;
 }
 
+.won{
+   
+    animation:glow-winner 0.5s infinite;
+    
+}
+
+
+@keyframes glow-winner{
+    0%{
+        box-shadow:0px 0px 0px $winner;
+        text-shadow:0px 0px 1px $winner;
+    }
+    25%{
+        box-shadow:0px 0px 25px $winner;
+        text-shadow:0px 0px 5px $winner;
+    }
+    50%{
+        box-shadow:0px 0px 0px $winner;
+        text-shadow:0px 0px 1px $winner;
+
+    }
+    75%{
+        box-shadow:0px 0px 25px $winner;
+        text-shadow:0px 0px 5px $winner;
+
+    }
+    100%{
+        box-shadow:0px 0px 0px $winner;
+        text-shadow:0px 0px 1px $winner;
+
+
+    }
+
+}
 .container{
     display:block;
     //width:700px;
