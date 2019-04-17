@@ -283,25 +283,25 @@ body{
 @media (hover: none) and (pointer: coarse){
     @keyframes glow-winner{
         0%{
-            box-shadow:none;
+            box-shadow:0px 0px 0px;
             text-shadow:0px 0px 1px $winner;
         }
         25%{
-            box-shadow:none;
+            box-shadow:0px 0px 25px;
             text-shadow:0px 0px 5px $winner;
         }
         50%{
-            box-shadow:none;
+            box-shadow:0px 0px 0px;
             text-shadow:0px 0px 1px $winner;
     
         }
         75%{
-            box-shadow:none;
+            box-shadow:0px 0px 25px;
             text-shadow:0px 0px 5px $winner;
     
         }
         100%{
-            box-shadow:none;
+            box-shadow:0px 0px 0px;
             text-shadow:0px 0px 1px $winner;
     
     
