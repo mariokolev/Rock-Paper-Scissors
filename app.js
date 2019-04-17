@@ -13,8 +13,12 @@ function compChoice(){
     return computer_choice = Math.round(Math.random() *(2 -  0)  + 0);
 }
 
-function UIDisplay(human, computer){
-    
+function highlightWinner(element){
+
+    let target = document.querySelector(element);
+    target.classList.add('won');
+    setTimeout(function(){
+    target.classList.remove('won'); }, 500);
 
 }
 
@@ -31,13 +35,19 @@ function result(human, computer){
                 cs++;
                 computer_score.innerHTML = cs;
                 message.innerHTML = 'Defeat. Paper beats rock!';
+                highlightWinner('.fa-robot');
                
                 }else if(computer === 0){
+                highlightWinner('.fa-user-alt');
+                highlightWinner('.fa-robot');
+                
                     message.innerHTML = 'Draw!';
                 }else if(computer === 2){
                     hs++;
                     message.innerHTML = 'You won. Rock beats scissors!';
                     human_score.innerHTML = hs;
+                highlightWinner('.fa-user-alt');
+
 
                 }
             }
@@ -46,14 +56,21 @@ function result(human, computer){
         case 1:{
                 if(computer === 1){
                     message.innerHTML = 'Draw!';
+                    highlightWinner('.fa-user-alt');
+                    highlightWinner('.fa-robot');
+
                     }else if(computer === 0){
                         hs++;
                         human_score.innerHTML = hs;
                         message.innerHTML = 'You won. Paper beats rock!';
+                        highlightWinner('.fa-user-alt');
+
                     }else if(computer ===2){
                         cs++;
                         computer_score.innerHTML = cs;
                         message.innerHTML = 'Defeat. Scissors beats paper!';
+                        highlightWinner('.fa-robot');
+
                     }
                 }
         break;
@@ -61,14 +78,22 @@ function result(human, computer){
         case 2:{
                 if(computer === 2){
                     message.innerHTML = 'Draw!';
+                    highlightWinner('.fa-robot');
+                    highlightWinner('.fa-user-alt');
+
+
                     }else if(computer === 0){
                         cs++;
                         computer_score.innerHTML = cs;
                         message.innerHTML = 'Defeat. Rock beats scissors!';
+                    highlightWinner('.fa-robot');
+
                     }else if(computer === 1 ){
                         hs++;
                         human_score.innerHTML = hs;
                         message.innerHTML = 'You won. Scissors beats paper!';
+                        highlightWinner('.fa-user-alt');
+
                     }
         }
 
